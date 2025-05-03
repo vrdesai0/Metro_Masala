@@ -5,6 +5,7 @@
     height: 565px;
     padding-top: 60px;
     margin-top: 170px;
+    height: fit-content;
   }
   
   .footer-top {
@@ -110,3 +111,56 @@
     font-size: 14px;
   }
   
+.svgim2 {
+  position: absolute;
+  margin-top: -90px;
+}
+  @media screen and (max-width: 1080px) {
+    .svgim2 {
+      margin-top: -30px;
+    }
+    .footer {
+      background-color: blue;
+    }
+    .image-grid {
+      display: none;
+    }
+    .resh3 {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .svgim2 {
+      margin-top: -10px;
+    }
+  }
+  @media screen and (max-width: 805px) {
+    .svgim2 {
+      margin-top: 10px;
+    }
+  }
+  @media screen and (max-width: 715px) {
+    .svgim2 {
+      margin-top: 40px;
+    }
+  }
+  @media screen and (max-width: 590px) {
+    .svgim2 {
+      margin-top: 60px;
+    }
+  }
+  @media screen and (max-width: 495px) {
+    .svgim2 {
+      margin-top: 80px;
+    }
+  }
+  @media screen and (max-width: 410px) {
+    .svgim2 {
+      margin-top: 90px;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .svgim2 {
+      margin-top: 100px;
+    }
+  }

@@ -7,30 +7,30 @@ const Footer = () => {
   return (
     <>
     
-    <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" width="100%" style={{ marginTop: '-90px', position: 'absolute' }}>
+    <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" width="100%" className="svgim2" >
       <path fill="#ed1c24" d="M0,120 C360,600 1000,-100 1440,200 L1440,320 L0,320 Z"></path>
     </svg>
 
     <footer className="footer">
       <div className="footer-top">
         <div className="footer-section">
-          <h3 className="autoshowAnimation">OUR STORE</h3>
-          <p className="autoshowAnimation">
+          <h3>OUR STORE</h3>
+          <p>
             Visit our store at 123 Fake St., Toronto for high-tech and great customer service. 
             Find your perfect look today.
           </p>
           <div className="subscribe-box">
-            <input type="email" className="autoshowAnimation" placeholder="Email address" />
-            <button  className="autoshowAnimation">SUBSCRIBE</button>
+            <input type="email" placeholder="Email address" />
+            <button >SUBSCRIBE</button>
           </div>
           <div className="social-icons">
-            <img src={footer2} className="autoshowAnimation" alt="" />
+            <img src={footer2} alt="" />
           </div>
         </div>
 
         <div className="footer-section">
-          <h3 className="autoshowAnimation">ABOUT US</h3>
-          <ul className="autoshowAnimation">
+          <h3>ABOUT US</h3>
+          <ul>
             <li>About us</li>
             <li>Contact</li>
             <li>Faqs</li>
@@ -39,8 +39,8 @@ const Footer = () => {
         </div>
 
         <div className="footer-section">
-          <h3 className="autoshowAnimation">SERVICES</h3>
-          <ul className="autoshowAnimation">
+          <h3>SERVICES</h3>
+          <ul>
             <li>Cart</li>
             <li>My Account</li>
             <li>Checkout</li>
@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-section">
-          <h3 className="autoshowAnimation">@Metro Masala</h3>
+          <h3 className="resh3">@Metro Masala</h3>
           <div className="image-grid autoshowAnimation">
             {[...Array(9)].map((_, i) => (
               <div key={i} className="image-box" />

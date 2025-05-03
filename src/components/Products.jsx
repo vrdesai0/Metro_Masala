@@ -18,11 +18,31 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const settings = {
+    slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+  ],
     dots: true,
     arrows: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 1, // adjust as needed
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000
