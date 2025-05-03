@@ -1,9 +1,9 @@
 {
+  "homepage": "https://vrdesai0.github.io/Metro_Masala",
   "name": "vite-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://vrdesai0.github.io/Metro_Masala/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
