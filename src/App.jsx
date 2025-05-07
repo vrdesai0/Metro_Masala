@@ -5,6 +5,7 @@ import Products from './components/Products.jsx'
 import Footer from './components/Footer.jsx'
 import ContactUs from './components/ContactUs.jsx'
 import PrePage from './components/PrePage.jsx'
+import FoodCategoryCards from './components/FoodCategoryCards.jsx'
 
 function App() {
   
@@ -13,6 +14,7 @@ function App() {
       <PrePage />
       <NavBar />
       <LandingPage />
+      <FoodCategoryCards />
       <HomePage />
       <Products />
       <ContactUs />
