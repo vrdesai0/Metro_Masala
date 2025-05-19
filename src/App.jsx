@@ -6,6 +6,10 @@ import Footer from './components/Footer.jsx'
 import ContactUs from './components/ContactUs.jsx'
 import PrePage from './components/PrePage.jsx'
 import FoodCategoryCards from './components/FoodCategoryCards.jsx'
+import Product_category from './components/products_category.jsx'
+import CategoryCards from './components/CategoryCards.jsx'
+import OfferContainer from './components/OfferContainer.jsx'
+import Testimonials from './components/Testimonials.jsx'
 
 function App() {
   
@@ -14,10 +18,14 @@ function App() {
       <PrePage />
       <NavBar />
       <LandingPage />
-      <FoodCategoryCards />
       <HomePage />
+      <FoodCategoryCards />
+      <Product_category />
+      <CategoryCards />
+      <OfferContainer />
       <Products />
-      <ContactUs />
+      <Testimonials />
+      {/* <ContactUs /> */}
       <Footer />
     </>
   )

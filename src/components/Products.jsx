@@ -69,7 +69,7 @@ function Products() {
     return (
         <>
             <div className="products" id='products'>
-                <h1 style={{ borderTop: '1px solid black', borderBottom: '1px solid black', marginBottom: '40px' }}>Ground Spices</h1>
+                <h1 style={{ borderTop: '1px solid black', borderBottom: '1px solid black', marginBottom: '40px' }}>Best Sellers</h1>
 
                 <Slider {...settings} className='box'>
 

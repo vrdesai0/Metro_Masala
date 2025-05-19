@@ -1,0 +1,100 @@
+.promo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #f8e9de;
+  padding: 40px 20px;
+}
+
+.promo-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.promo-text {
+  padding: 30px;
+  flex: 1;
+}
+
+.promo-discount {
+  color: #f2835d;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.promo-subheading {
+  color: #1a1a1a;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.promo-title {
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+
+.promo-desc {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.promo-button {
+  background-color: #f2835d;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(242, 131, 93, 0.3);
+}
+
+.promo-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.promo-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.promo-yellow {
+  background-color: #f4c968;
+}
+
+.promo-pink {
+  background-color: #d6647e;
+}
+
+@media (min-width: 768px) {
+  .promo-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .promo-card {
+    flex-direction: row;
+    width: 48%;
+  }
+
+  .promo-image {
+    flex: 1;
+  }
+
+  .promo-text {
+    flex: 1;
+  }
+}
