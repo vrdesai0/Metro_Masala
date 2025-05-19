@@ -1220,11 +1220,10 @@ body {
         align-items: end !important;
         /* text-align: center !important; */
         /* margin-right: 15px; */
+        height: 300px !important;
+
     }
 
-    Nav {
-        height: 400px !important;
-    }
 }
 
 
