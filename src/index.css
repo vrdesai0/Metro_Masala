@@ -35,9 +35,6 @@ body {
 }
 
 
-Nav {
-    height: 400px !important;
-}
 
 .nav-link {
     color: white !important;
@@ -239,25 +236,25 @@ Nav {
 /* Home page */
 
 .stats-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 30px;
-  padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 40px 20px;
 }
 
 .stat {
-  text-align: center;
-  min-width: 150px;
+    text-align: center;
+    min-width: 150px;
 }
 
 .stat-number {
-  font-size: 2.5rem;
-  font-weight: bold;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .stat-label {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 
@@ -819,9 +816,11 @@ Nav {
     text-align: center;
     font-size: larger;
 }
+
 .cart_btn {
     width: 100%;
 }
+
 .explore_btn {
     width: 30%;
     margin-top: 20px;
@@ -832,76 +831,76 @@ Nav {
 }
 
 .spices-section2 {
-  background: #f7e6d8;
-  padding: 40px 20px;
-  text-align: center;
-  height: 1000px;
+    background: #f7e6d8;
+    padding: 40px 20px;
+    text-align: center;
+    height: 1000px;
 }
 
 .spices-section2 h2 {
-  font-family: 'Georgia', serif;
-  font-size: 42px;
-  margin-bottom: 30px;
-  color: #1e1e1e;
-  overflow: hidden;
+    font-family: 'Georgia', serif;
+    font-size: 42px;
+    margin-bottom: 30px;
+    color: #1e1e1e;
+    overflow: hidden;
 }
 
 .spices-section2 h2 span {
-  font-style: italic;
+    font-style: italic;
 }
 
 .spices-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-  max-width: 1300px;
-  margin: auto;
-  overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1300px;
+    margin: auto;
+    overflow: hidden;
 }
 
 .spice-card2 {
-  background: #fdf2e8;
-  padding: 20px;
-  border-radius: 10px;
-  min-height: 350px;
-  border: 1px solid #e5d0bd;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
+    background: #fdf2e8;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 350px;
+    border: 1px solid #e5d0bd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
 }
 
 .spice-card2:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .spice-card2 img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin: 0 auto 15px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .spice-card2 h3 {
-  font-size: 18px;
-  color: #1a1a1a;
-  margin-bottom: 8px;
-  overflow: hidden;
+    font-size: 18px;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    overflow: hidden;
 }
 
 .spice-card2 p {
-  font-size: 16px;
-  color: #555;
+    font-size: 16px;
+    color: #555;
 }
 
 .spice-card2 p del {
-  color: #999;
-  margin-right: 5px;
+    color: #999;
+    margin-right: 5px;
 }
 
 .spice-card2 p span {
-  color: #2c2c2c;
-  font-weight: bold;
+    color: #2c2c2c;
+    font-weight: bold;
 }
 
 
@@ -920,9 +919,11 @@ Nav {
         top: 815px;
         height: 500px;
     }
+
     .spices-section2 {
         height: 1300px;
     }
+
     .marq2 {
         margin-bottom: 200px;
         overflow: hidden;
@@ -1082,6 +1083,7 @@ Nav {
     .spices-section2 {
         overflow: hidden;
     }
+
     .marq2 {
         /* margin-top: 250px; */
         margin-bottom: 284px;
@@ -1180,7 +1182,7 @@ Nav {
         padding-left: 60px;
     }
 
-    
+
     .svgim {
         top: 380px;
         height: 500px;
@@ -1197,7 +1199,7 @@ Nav {
         margin-left: 0 !important;
     }
 
-    
+
 }
 
 @media screen and (max-width: 992px) {
@@ -1208,16 +1210,21 @@ Nav {
     .nav1 {
         display: none !important;
     }
+
     .nav_ul {
-    /* font-weight: bold;
+        /* font-weight: bold;
     list-style: none; */
-    width: 100%;
-    display: flex;
-    flex-direction: column !important;
-    align-items: end !important;
-    /* text-align: center !important; */
-    /* margin-right: 15px; */
-}
+        width: 100%;
+        display: flex;
+        flex-direction: column !important;
+        align-items: end !important;
+        /* text-align: center !important; */
+        /* margin-right: 15px; */
+    }
+
+    Nav {
+        height: 400px !important;
+    }
 }
 
 
@@ -1227,6 +1234,7 @@ Nav {
         height: 930px;
         position: relative;
     }
+
     .explore_btn {
         position: absolute;
         bottom: 0;
@@ -1241,7 +1249,7 @@ Nav {
         top: 380px;
         height: 500px;
     }
-    
+
 }
 
 @media screen and (max-width: 800px) {
@@ -1260,7 +1268,7 @@ Nav {
     .sltext5 {
         left: 200px;
     }
-    
+
 }
 
 @media screen and (max-width: 685px) {
