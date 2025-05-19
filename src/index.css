@@ -34,6 +34,11 @@ body {
     text-transform: uppercase;
 }
 
+
+Nav {
+    height: 400px !important;
+}
+
 .nav-link {
     color: white !important;
 }
