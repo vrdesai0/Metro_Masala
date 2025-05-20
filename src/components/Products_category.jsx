@@ -1,6 +1,7 @@
 import im1 from '../../src/assets/dalgosht.jpg'
 import back2 from '../assets/extra_back3.jpg'
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 function Product_category() {
@@ -20,6 +21,13 @@ function Product_category() {
       window.addEventListener('scroll', handleScroll);
       return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+
+     const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/shop'); // navigate to About component
+  };
     
 
     return (
@@ -90,7 +98,7 @@ function Product_category() {
                         <button className='cart_btn p_btn'>Add to Cart</button>
                     </div>
                 </div>
-                <button className='explore_btn p_btn'>Explore More</button>
+                <button onClick={handleClick} className='explore_btn p_btn'>Explore More</button>
             </section>
 
 
