@@ -3,10 +3,20 @@ import im2 from '../assets/bg2.jpg'
 import im3 from '../assets/bg3.jpg'
 import im4 from '../assets/bg4.jpg'
 import im5 from '../assets/bg5.jpg'
+import CategoryCards from './CategoryCards'
+import FoodCategoryCards from './FoodCategoryCards'
+import Footer from './Footer'
+import HomePage from './HomePage'
+import NavBar from './NavBar'
+import OfferContainer from './OfferContainer'
+import Products from './Products'
+import Product_category from './products_category'
+import Testimonials from './Testimonials'
 
 function LandingPage() {
     return (
         <>
+        <NavBar />
             <div className="slider" id='landing'>
                 <div className="slide active">
                     <img src={im1} className="active" />
@@ -49,7 +59,14 @@ function LandingPage() {
                 <path fill="#F8EEE7" d="M0,120 C360,600 1000,-100 1440,200 L1440,320 L0,320 Z"></path>
             </svg>
 
-
+      <HomePage />
+      <FoodCategoryCards />
+      <Product_category />
+      <CategoryCards />
+      <OfferContainer />
+      <Products />
+      <Testimonials />
+      <Footer />
 
 
 

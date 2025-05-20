@@ -6,6 +6,7 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { ShoppingCartIcon, UserPen } from 'lucide-react';
 import { Navbar, Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 // import { useState } from 'react'
 
 function NavBar() {
@@ -36,13 +37,21 @@ function NavBar() {
             <Navbar sticky="top" expand="lg" style={{ backgroundColor: '#ed1c24' }}>
                 <Navbar.Collapse>
                     <Nav className='nav_ul nav1'>
-                        <Nav.Link href="#tag" className='me-4'>Home</Nav.Link>
-                        <Nav.Link href="#about" className='me-4'>About</Nav.Link>
-                        <Nav.Link href="#products " className='me-4'>Products</Nav.Link>
-                        <Nav.Link href="#contact" className=''>Contact Us</Nav.Link>
+                        <Nav.Link className='me-4'>
+                            <Link className='link' to='/'>Home</Link>
+                        </Nav.Link>
+                        <Nav.Link className='me-4'>
+                            <Link className='link' to='/about'>About</Link>
+                        </Nav.Link>
+                        <Nav.Link className='me-4'>
+                            <Link className='link' to='/shop'>Shop</Link>
+                        </Nav.Link>
+                        <Nav.Link href="#contact" className=''>
+                            <Link className='link' to='/contact'>Contact Us</Link>
+                        </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
-                <Navbar.Brand href="#" className='ms-4'><img src={logo} alt="logo" width={120} height={80} />
+                <Navbar.Brand href="/" className='ms-4'><img src={logo} alt="logo" width={120} height={80} />
                 </Navbar.Brand>
                 
                 <Navbar.Toggle>
@@ -51,17 +60,25 @@ function NavBar() {
                 </Navbar.Toggle>
                 <Navbar.Collapse>
                     <Nav className='nav_ul nav2'>
-                        <Nav.Link href="#home" className='me-4'>Home</Nav.Link>
-                        <Nav.Link href="#about" className='me-4'>About</Nav.Link>
-                        <Nav.Link href="#products " className='me-4'>Products</Nav.Link>
-                        <Nav.Link href="#contact" className='me-4'>Contact Us</Nav.Link>
+                        <Nav.Link className='me-4'>
+                            <Link className='link' to='/'>Home</Link>
+                        </Nav.Link>
+                        <Nav.Link className='me-4'>
+                            <Link className='link' to='/about'>About</Link>
+                        </Nav.Link>
+                        <Nav.Link className='me-4'>
+                            <Link className='link' to='/shop'>Shop</Link>
+                        </Nav.Link>
+                        <Nav.Link className='me-4'>
+                            <Link className='link' to='/contact'>Contact Us</Link>
+                        </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
                 <Navbar.Collapse className='social'>
                     <Nav style={{ gap: '30px', marginLeft: '0', marginRight: '0'}}>
-                        <Nav.Link href="#" ><FontAwesomeIcon icon={faInstagram} className='icon ic1' /></Nav.Link>
-                        <Nav.Link href="#"><FontAwesomeIcon icon={faGoogle} className='icon ic3' /></Nav.Link>
-                        <Nav.Link href="# "><FontAwesomeIcon icon={faWhatsapp} className='icon ic4' /></Nav.Link>
+                        <Nav.Link target='_blank' href="https://www.instagram.com/metro_masala_vagra_01?igsh=MXc3YjlrNDUwenp5cw==" ><FontAwesomeIcon icon={faInstagram} className='icon ic1' /></Nav.Link>
+                        <Nav.Link target='_blank' href='mailto:info@metromasala.com'><FontAwesomeIcon icon={faGoogle} className='icon ic3' /></Nav.Link>
+                        <Nav.Link target='_blank' href="https://wa.me/+919167962252?text=Hey Metro Masala."><FontAwesomeIcon icon={faWhatsapp} className='icon ic4' /></Nav.Link>
                         <Nav.Link href="#"> <ShoppingCartIcon /> </Nav.Link>
                         <Nav.Link href="#"><UserPen className='icon ic3' /></Nav.Link>
                     </Nav>

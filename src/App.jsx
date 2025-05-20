@@ -10,23 +10,35 @@ import Product_category from './components/products_category.jsx'
 import CategoryCards from './components/CategoryCards.jsx'
 import OfferContainer from './components/OfferContainer.jsx'
 import Testimonials from './components/Testimonials.jsx'
+import AboutUs from './components/AbousUs.jsx'
+import { Route, Routes } from 'react-router-dom'
+import Shop from './components/Shop.jsx'
 
 function App() {
   
   return (
     <>
       <PrePage />
-      <NavBar />
-      <LandingPage />
-      <HomePage />
+    <Routes  >
+      <Route path='/about' element={<AboutUs />} />
+      <Route path='/contact' element={<ContactUs />} />
+      <Route path='/shop' element={<Shop />} />
+    </Routes>
+    <Routes  >
+      <Route path='/' element={<LandingPage />} />
+    </Routes>
+    {/* <NavBar /> */}
+    {/* <LandingPage />
+    <HomePage />
       <FoodCategoryCards />
       <Product_category />
       <CategoryCards />
       <OfferContainer />
       <Products />
-      <Testimonials />
+      <Testimonials /> */}
       {/* <ContactUs /> */}
-      <Footer />
+      {/* <Footer /> */}
+    {/* <AboutUs /> */}
     </>
   )
 }

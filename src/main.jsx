@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter  basename="/Metro_Masala">
+  <BrowserRouter  basename="/Metro_Masala/">
     <App />
   </BrowserRouter>
 )

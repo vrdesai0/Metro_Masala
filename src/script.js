@@ -1,4 +1,4 @@
-// navbar
+//navbar
 
 window.addEventListener('scroll', function () {
     const navbar = document.getElementById('nav');
@@ -24,6 +24,7 @@ window.addEventListener('scroll', function () {
       slides[current].classList.add("active");
     }, 4000);
 });
+
 
 
 
