@@ -374,7 +374,7 @@ body {
 }
 
 .back1 {
-    width: 100%;
+    width: 105vw;
     height: 100vh;
 }
 
@@ -1144,7 +1144,8 @@ body {
 
     .back1 {
         height: fit-content;
-        margin-left: 15px;
+        /* margin-left: 15px; */
+        width: 105vw;
     }
 
     .category-container {

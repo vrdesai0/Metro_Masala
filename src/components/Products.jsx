@@ -77,7 +77,7 @@ function Products() {
                         onMouseEnter={() => handleHover(setHoverImage1, pr1_h)}
                         onMouseLeave={() => handleHover(setHoverImage1, pr1)}>
                         <img src={hoverImage1} alt="" />
-                        <div className="content_box">
+                        <div className="content_box" style={{overflow:'hidden'}}>
                             <h2>Turmeric Powder</h2>
                             <p>$50.00/100gm</p>
                         </div>
@@ -87,7 +87,7 @@ function Products() {
                         onMouseEnter={() => handleHover(setHoverImage2, pr2_h)}
                         onMouseLeave={() => handleHover(setHoverImage2, pr2)}>
                         <img src={hoverImage2} alt="" />
-                        <div className="content_box">
+                        <div className="content_box" style={{overflow:'hidden'}}>
                             <h2>Kashmiri Laal Mirch</h2>
                             <p>$50.00/100gm</p>
                         </div>
@@ -97,7 +97,7 @@ function Products() {
                         onMouseEnter={() => handleHover(setHoverImage3, pr3_h)}
                         onMouseLeave={() => handleHover(setHoverImage3, pr3)}>
                         <img src={hoverImage3} alt="" />
-                        <div className="content_box">
+                        <div className="content_box" style={{overflow:'hidden'}}>
                             <h2>Dhaniya Powder</h2>
                             <p>$50.00/100gm</p>
                         </div>
@@ -107,7 +107,7 @@ function Products() {
                         onMouseEnter={() => handleHover(setHoverImage5, pr4_h)}
                         onMouseLeave={() => handleHover(setHoverImage5, pr5)}>
                         <img src={hoverImage5} alt="" />
-                        <div className="content_box">
+                        <div className="content_box" style={{overflow:'hidden'}}>
                             <h2>Dal Gosht Masala</h2>
                             <p>$50.00/100gm</p>
                         </div>
@@ -117,7 +117,7 @@ function Products() {
                         onMouseEnter={() => handleHover(setHoverImage4, pr2_h)}
                         onMouseLeave={() => handleHover(setHoverImage4, pr4)}>
                         <img src={hoverImage4} alt="" />
-                        <div className="content_box">
+                        <div className="content_box" style={{overflow:'hidden'}}>
                             <h2>Kumthi Mirch Powder</h2>
                             <p>$50.00/100gm</p>
                         </div>
@@ -128,7 +128,7 @@ function Products() {
                         onMouseEnter={() => handleHover(setHoverImage6, pr5_h)}
                         onMouseLeave={() => handleHover(setHoverImage6, pr6)}>
                         <img src={hoverImage6} alt="" />
-                        <div className="content_box">
+                        <div className="content_box" style={{overflow:'hidden'}}>
                             <h2>Chicken Masala</h2>
                             <p>$50.00/100gm</p>
                         </div>
@@ -138,7 +138,7 @@ function Products() {
                         onMouseEnter={() => handleHover(setHoverImage7, pr6_h)}
                         onMouseLeave={() => handleHover(setHoverImage7, pr7)}>
                         <img src={hoverImage7} alt="" />
-                        <div className="content_box">
+                        <div className="content_box" style={{overflow:'hidden'}}>
                             <h2>Biryani Masala</h2>
                             <p>$50.00/100gm</p>
                         </div>

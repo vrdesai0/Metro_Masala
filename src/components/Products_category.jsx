@@ -1,38 +1,31 @@
+import { Link } from 'react-router-dom';
 import im1 from '../../src/assets/dalgosht.jpg'
-import back2 from '../assets/extra_back3.jpg'
+import back2 from '../assets/back.jpg'
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 
 function Product_category() {
 
-        const [currentSection, setCurrentSection] = useState(1);
-    
+    const [currentSection, setCurrentSection] = useState(1);
+
     useEffect(() => {
-      const handleScroll = () => {
-        const scrollY = window.scrollY;
-        if (scrollY < 1900) {
-          setCurrentSection(1);
-    
-        } else if (scrollY < 3800) {
-          setCurrentSection(2);
-        }
-      };
-      window.addEventListener('scroll', handleScroll);
-      return () => window.removeEventListener('scroll', handleScroll);
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            if (scrollY < 1900) {
+                setCurrentSection(1);
+
+            } else if (scrollY < 3800) {
+                setCurrentSection(2);
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
 
-     const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate('/shop'); // navigate to About component
-  };
-    
-
     return (
         <>
-        
+
             <div className='marq'>
                 <div className="marquee-container">
                     <div className="marquee">
@@ -98,7 +91,8 @@ function Product_category() {
                         <button className='cart_btn p_btn'>Add to Cart</button>
                     </div>
                 </div>
-                <button onClick={handleClick} className='explore_btn p_btn'>Explore More</button>
+                <Link to='/shop' style={{color: 'white', textDecoration: 'none'}}>
+                <button className='explore_btn p_btn'>Explore More</button></Link>
             </section>
 
 
@@ -116,10 +110,9 @@ function Product_category() {
                 </div>
             </div>
             <div className="back1">
-                
                 <img src={back2} className='back1_img' alt="" style={{
                     opacity: currentSection === 2 ? 1 : 0,
-                    
+
                 }} />
             </div>
         </>

@@ -6,7 +6,7 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { ShoppingCartIcon, UserPen } from 'lucide-react';
 import { Navbar, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, Links } from 'react-router-dom';
 // import { useState } from 'react'
 
 function NavBar() {
@@ -79,8 +79,8 @@ function NavBar() {
                         <Nav.Link target='_blank' href="https://www.instagram.com/metro_masala_vagra_01?igsh=MXc3YjlrNDUwenp5cw==" ><FontAwesomeIcon icon={faInstagram} className='icon ic1' /></Nav.Link>
                         <Nav.Link target='_blank' href='mailto:info@metromasala.com'><FontAwesomeIcon icon={faGoogle} className='icon ic3' /></Nav.Link>
                         <Nav.Link target='_blank' href="https://wa.me/+919167962252?text=Hey Metro Masala."><FontAwesomeIcon icon={faWhatsapp} className='icon ic4' /></Nav.Link>
-                        <Nav.Link href="#"> <ShoppingCartIcon /> </Nav.Link>
-                        <Nav.Link href="#"><UserPen className='icon ic3' /></Nav.Link>
+                        <Nav.Link > <Link to='/MyCart' style={{textDecoration: 'none', color:'white'}}><ShoppingCartIcon /></Link></Nav.Link>
+                        <Nav.Link><Link to='/MyProfile' style={{textDecoration: 'none', color:'white'}}><UserPen className='icon ic3' /></Link></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

@@ -1,0 +1,258 @@
+/* Updated CSS matching the React component class names exactly */
+
+.product-detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 40px;
+  background-color: white;
+}
+
+.product-images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.main-image {
+  width: 100%;
+  max-width: 600px;
+  max-height: 500px;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.main-image:hover {
+  transform: scale(1.1);
+}
+
+.thumbnail-list {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 10px;
+}
+
+.thumbnail-image {
+  width: 80px;
+  height: auto;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.product-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 1.5rem;
+  color: #444;
+}
+
+.ingredients, .allergen {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.size-options,
+.color-options {
+  display: flex;
+  gap: 10px;
+}
+
+.size-button,
+.color-button {
+  padding: 6px 12px;
+  border: 1px solid #333;
+  background-color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.size-button.active,
+.color-button.active {
+  background-color: #e00;
+  color: white;
+  border-color: #e00;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-controls button {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.cart-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.add-to-cart,
+.buy-now {
+  padding: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.buy-now {
+  background-color: red;
+  color: white;
+}
+
+.add-to-cart  {
+  background-color: black;
+  color: white;
+}
+.active2 {
+  background-color: black;
+  color: white;
+}
+
+.active{
+  background-color: red;
+  color: white;
+}
+
+.policy-dropdown {
+  /* border-top: 1px solid #ccc; */
+  margin-top: 10px;
+}
+
+.dropdown-toggle {
+
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-top: 10px;
+
+}
+
+.dropdown-toggle p {
+  display: inline;
+
+}
+.dropdown-content {
+  padding: 10px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
+.closebtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.closebtn span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  overflow: hidden;
+  cursor: pointer;
+}
+.closebtn h3 {
+  overflow: hidden;
+}
+
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  border-left: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  overflow-y: auto;
+  z-index: 1100;
+}
+
+.cart-sidebar h3 {
+  margin-top: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.cart-item img {
+  width: 50px;
+}
+
+.cart-footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.view-cart,
+.checkout {
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.view-cart {
+  background-color: #ddd;
+}
+
+.checkout {
+  background-color: green;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .product-detail-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-images {
+    align-items: center;
+  }
+
+  .thumbnail-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .product-info {
+    width: 100%;
+  }
+
+  .cart-sidebar {
+    width: 100%;
+  }
+}

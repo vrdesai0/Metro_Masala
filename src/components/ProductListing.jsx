@@ -5,6 +5,7 @@ import redCh from '../assets/cr_1.jpg'
 import haldi from '../assets/cr_2.jpg'
 import dhaniya from '../assets/cr_3.jpg'
 import vege from '../assets/cr_5.jpg'
+import { Link } from 'react-router-dom';
 
 const productsData = [
   {
@@ -337,13 +338,15 @@ const ProductListing = () => {
 
       <main className="products2">
         {filteredProducts.map((product) => (
+          <Link style={{textDecoration: 'none', color:'black'}} to='/product-details'>
           <div className="product-card2" key={product.id}>
             <img src={product.image} alt={product.name} />
             <h4>{product.name}</h4>
             <p>{product.size}</p>
             <p>₹{product.price}</p>
-            <button>Quick Add</button>
+            <button>Add To Cart</button>
           </div>
+          </Link>
         ))}
       </main>
     </div>

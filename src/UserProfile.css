@@ -1,0 +1,92 @@
+/* UserProfile5.css */
+
+.user-profile5 {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.user-profile5-left5 {
+  width: 100%;
+  max-width: 300px;
+  border-right: 1px solid #ccc;
+  padding-right: 1rem;
+}
+
+.user-profile5-left5 .avatar5 {
+  width: 100px;
+  height: 100px;
+  background-color: #222;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.user-profile5-left5 .username5 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.user-profile5-left5 .menu5 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.user-profile5-left5 .menu-item5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.user-profile5-left5 .menu-item5.active5,
+.user-profile5-left5 .menu-item5:hover {
+  background-color: #f5f5f5;
+}
+
+.user-profile5-right5 {
+  flex: 1;
+  padding: 1rem;
+}
+
+.user-profile5-right5 h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.user-profile5-right5 p {
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+.user-profile5-right5 hr {
+  margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .user-profile5 {
+    flex-direction: column;
+  }
+
+  .user-profile5-left5 {
+    max-width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+  }
+
+  .user-profile5-right5 {
+    padding-top: 1rem;
+  }
+}

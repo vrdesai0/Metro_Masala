@@ -29,7 +29,7 @@ function CategoryCards() {
               ];
 
               useEffect(() => {
-                  AOS.init({ duration: 200 });
+                  AOS.init({ duration: 100 });
                 }, []);
               
       
@@ -38,14 +38,14 @@ function CategoryCards() {
     return (
       <div className="category-container" data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-offset="10">
         {data.map((item, i) => (
-          <div className="category-card"  data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-offset="10" key={i}>
+          <div className="category-card" key={i}>
             <div
               className="circle-img" 
               style={{ backgroundColor: item.bg }}
             >
               <img src={item.img} alt={item.title} />
             </div>
-            <h2>{item.title}</h2>
+            <h2 style={{overflow:'hidden'}}>{item.title}</h2>
             <p>{item.desc}</p>
           </div>
         ))}
